@@ -1,2 +1,3 @@
 # rust-projects
-projects in rust
+
+Learn rust in https://doc.rust-lang.org/book/
