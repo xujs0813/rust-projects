@@ -39,9 +39,22 @@ fn main() {
     println!("ary1 is {ary1}");
     // let ary2 = ary[10]; // 访问超界限
 
-    another_fu();
+    another_fu(4);
 }
 
-fn another_fu(){
-    println!("another_fu!");
+fn another_fu(x: i32){
+    println!("another_fu! {x}");
+
+    let y = {
+        let x = 3;
+        x + 1
+    };
+    print!("y is {y} \n");
+
+    let res = five();
+    print!("res is {res}");
+}
+
+fn five() -> i32{
+    5  // 不加分号表示为表达式；加分号是语句，将会报错： expect i32
 }
